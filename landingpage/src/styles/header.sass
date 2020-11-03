@@ -1,0 +1,159 @@
+/*primary*/
+$dark-blue: hsl(233, 26%, 24%)
+$lime-green: hsl(136, 65%, 51%)
+$bright-cyan: hsl(192, 70%, 51%)
+
+/*neutral*/
+$grey-blue: hsl(233, 8%, 62%)
+$light-blue: hsl(233, 8%, 62%)
+$very-light-blue: hsl(0, 0%, 98%)
+$white: hsl(0, 0%, 100%)
+
+$green-gradient: linear-gradient(300deg, rgba(43,183,208,1) 0%, rgba(49,211,92,1) 75%)
+$hover-gradient: linear-gradient(300deg, #5fc4d6 0%, #73d18c 75%)
+
+.nav-bar
+    width: 100%
+    height: 4rem
+    background-color: $very-light-blue
+    display: grid
+    color: $grey-blue
+    transform: translatex(100%)
+    z-index: 99
+    position: fixed
+    opacity: 0
+    @media screen and ( max-width:600px  )
+        .navbar-container
+            display: flex
+            justify-content: space-around
+            .mobile-nav
+                display: block !important
+                
+                .burger
+
+                    
+        .link-section
+            p 
+
+                margin: 0
+            .navigation-link
+                
+                padding: 0.6rem 0
+                
+            border-radius: .5rem
+            background-color: $very-light-blue
+            height: auto
+            margin: 0 auto
+            position: absolute
+            flex-direction: column
+            top: 6rem
+            color: $dark-blue
+            right: 20vw
+            // padding: 1rem
+            text-align: center
+            padding: 0 3rem
+            // border: 3rem solid #deeaf800
+            box-shadow: 0px 0px 100px 50px rgba(0, 0, 0, 0.75)
+            display: block
+            opacity: 0
+            z-index: 80
+            .navbar-container
+                display: flex
+                // align-items: space-around
+                justify-content: space-around
+            
+        .nav-btn
+            display: none
+        .burger
+            
+            
+            opacity: 1
+            display: block
+            img
+                max-width: 100%
+                margin: auto 0 
+            
+            // margin: auto 0 
+           
+.burger, .close
+    grid-column: 4
+    height: 2rem
+    width:  2rem
+
+.close
+    height: 2rem
+    width:  2rem
+    img
+        max-width: 100%
+    opacity: 0
+
+.mobile-nav
+    display: none
+    
+    
+.burger-el
+    display: block
+    background-color: $dark-blue
+    width: 100%
+    height: 10%
+    // margin-bottom: 0.66rem
+
+    &:active
+        // transform: scale(1.3)
+        filter: invert(0) sepia(1) saturate(10.4) hue-rotate(64.8deg) brightness(1)
+        
+
+.navbar-container
+    z-index: 99
+    margin: auto 2rem
+    display: grid
+    align-content: center
+    grid-template-columns: 1fr 2fr 1fr
+    grid-template-rows: 100%
+   
+    align-items: center
+
+.nav-logo
+    justify-self: start
+    grid-column: 1 / span 2
+    grid-row: 1
+
+.link-section
+    justify-self: start
+    grid-column: 2
+    grid-row: 1
+    display: flex
+    // justify-content: space-around
+    height: 100%
+
+.nav-link-text
+    cursor: pointer
+    
+    
+
+.navigation-link
+    
+    height: 100%
+    margin: 0 2rem
+    box-sizing: border-box
+    position: relative
+    &:hover
+        color: $dark-blue
+        // border-bottom: inset 0.3rem $lime-green
+        &::after
+            position: absolute
+            background: $lime-green
+            content: ''
+            width: 100%
+            height: 0.3rem
+            display: block
+
+    p   
+        
+        &:active
+            transform: scale(0.95)
+
+.nav-btn
+    justify-self: end
+    grid-column: 3
+    grid-row: 1

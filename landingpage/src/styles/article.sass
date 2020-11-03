@@ -1,0 +1,97 @@
+/*primary*/
+$dark-blue: hsl(233, 26%, 24%)
+$lime-green: hsl(136, 65%, 51%)
+$bright-cyan: hsl(192, 70%, 51%)
+
+/*neutral*/
+$grey-blue: hsl(233, 8%, 62%)
+$light-blue: hsl(233, 8%, 62%)
+$very-light-blue: hsl(0, 0%, 98%)
+$white: hsl(0, 0%, 100%)
+
+$green-gradient: linear-gradient(300deg, rgba(43,183,208,1) 0%, rgba(49,211,92,1) 75%)
+$hover-gradient: linear-gradient(300deg, #5fc4d6 0%, #73d18c 75%)
+
+
+
+
+.article-container
+    // opacity: 0
+    padding: 4rem 4rem
+    background-color: $very-light-blue
+    .article-heading
+        font-family: inherit
+        font-size: 2.5rem
+        font-weight: 300 
+        margin: 3rem 0 
+    @media screen and ( max-width: 600px )
+        padding: 4rem 2rem
+        .article-heading
+            text-align: center
+        
+        
+.article-list
+    // transform: translateX(-110%)
+    display: flex
+    justify-content: space-between
+    @media screen and ( max-width: 600px )
+        flex-direction: column
+        .article
+            width: 100% !important
+            max-width: 100% !important
+            margin-bottom: 1rem
+            margin-right: 0 
+    .article
+        transform: translateY(-20%)
+        opacity: 1
+        // z-index: 80
+        // margin-right: 2rem
+        font-family: 'Public Sans', sans-serif
+        display: flex
+        flex-direction: column
+        height: auto
+        
+        border-radius:  0.3rem  0.3rem 0 0
+        // width: 34rem
+        max-width: 23%
+        background-color: #f0f8ffd3
+        &:hover
+            // transform: scale(2)
+            box-shadow: 1px 17px 16px 0px rgba(0, 0, 0, 0.5)
+        // &:active
+        &:active
+            transform: scale(0.998)
+        
+        .article-text
+            padding: 1rem
+            .article-author
+                font-size: 0.7em
+                color: $light-blue
+            h4
+                margin: 0
+                font-weight: 500
+            .article-title
+                margin-top: 1rem
+                cursor: pointer
+                &:hover
+                    color: $lime-green
+        
+
+            p   
+                color: $light-blue
+                font-weight: 300
+                font-size: 0.7em
+        .image-container
+            
+            width: 100%
+            height: 11rem
+            border-radius:  0.3rem  0.3rem 0 0
+            .article-image
+                border-radius:  0.3rem  0.3rem 0 0
+                width: 100%
+                height: 100%
+// .article-container 
+//     .article-list
+//         .article    
+//             &:active
+//                 display: none

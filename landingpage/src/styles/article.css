@@ -1,0 +1,108 @@
+/*primary*/
+/*neutral*/
+.article-container {
+  opacity: 0;
+  padding: 4rem 4rem;
+  background-color: #fafafa;
+}
+
+.article-container .article-heading {
+  font-family: inherit;
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin: 3remm 0;
+}
+
+.article-list {
+  -webkit-transform: translateX(-110%);
+          transform: translateX(-110%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (max-width: 600px) {
+  .article-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .article-list .article {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-bottom: 1rem;
+    margin-right: 0;
+  }
+}
+
+.article-list .article {
+  z-index: 80;
+  font-family: 'Public Sans', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: auto;
+  border-radius: 0.3rem  0.3rem 0 0;
+  max-width: 23%;
+  background-color: #f0f8ffd3;
+}
+
+.article-list .article:hover {
+  -webkit-box-shadow: 1px 17px 16px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 1px 17px 16px 0px rgba(0, 0, 0, 0.5);
+}
+
+.article-list .article:active {
+  -webkit-transform: scale(0.998);
+          transform: scale(0.998);
+}
+
+.article-list .article .article-text {
+  padding: 1rem;
+}
+
+.article-list .article .article-text .article-author {
+  font-size: 0.7em;
+  color: #9698a6;
+}
+
+.article-list .article .article-text h4 {
+  margin: 0;
+  font-weight: 500;
+}
+
+.article-list .article .article-text .article-title {
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.article-list .article .article-text .article-title:hover {
+  color: #31d35c;
+}
+
+.article-list .article .article-text p {
+  color: #9698a6;
+  font-weight: 300;
+  font-size: 0.7em;
+}
+
+.article-list .article .image-container {
+  width: 100%;
+  height: 11rem;
+  border-radius: 0.3rem  0.3rem 0 0;
+}
+
+.article-list .article .image-container .article-image {
+  border-radius: 0.3rem  0.3rem 0 0;
+  width: 100%;
+  height: 100%;
+}
+/*# sourceMappingURL=article.css.map */

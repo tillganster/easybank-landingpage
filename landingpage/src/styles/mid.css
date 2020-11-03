@@ -1,0 +1,232 @@
+/*primary*/
+/*neutral*/
+.main-content {
+  position: relative;
+  padding: 4rem;
+  background-color: #ffffffed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: -3;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  opacity: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .main-content {
+    padding: 2rem 2rem;
+  }
+  .main-content .heading-container {
+    width: 100% !important;
+    text-align: center;
+    padding: 2rem 0;
+  }
+  .main-content .icon-list {
+    width: 100% !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main-content .icon-list .icon-card {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  .main-content .icon-list .icon-card p {
+    text-align: center;
+  }
+}
+
+.main-content h4 {
+  font-weight: 300;
+}
+
+.main-content .heading-container {
+  width: 50%;
+  margin: 2rem 0;
+}
+
+.main-content .heading-container .main-header {
+  font-size: 2rem;
+  margin: 0 0 1rem 0;
+}
+
+.main-content .heading-container p {
+  font-weight: 300;
+  font-size: 0.99rem;
+  margin: 0;
+}
+
+.main-content .icon-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-content .icon-card {
+  width: 16rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-content img {
+  width: 5rem;
+}
+
+.icon-text {
+  font-size: 1.01rem;
+  font-weight: 300;
+  color: #9698a6;
+  white-space: pre-line;
+  -webkit-transform: translateX(-120%);
+          transform: translateX(-120%);
+  opacity: 0;
+}
+
+.topleft-container {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  height: auto;
+}
+
+@media screen and (max-width: 600px) {
+  .topleft-container {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+}
+
+.topleft-container .default-header {
+  font-weight: 300;
+  font-size: 3rem;
+}
+
+.topleft-container .base-btn {
+  -webkit-transform: translateX(-150%);
+          transform: translateX(-150%);
+  transform-opacity: 0;
+}
+
+.content-container {
+  background-color: #f5f5f5;
+  position: relative;
+  z-index: -2;
+}
+
+.my-body {
+  padding: 1.5rem 4rem;
+  padding-top: 2rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 60%;
+      grid-template-columns: 40% 60%;
+  -ms-grid-rows: 100%;
+      grid-template-rows: 100%;
+  height: 47rem;
+  min-height: 10%;
+}
+
+@media screen and (max-width: 600px) {
+  .my-body {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: 40% 60%;
+        grid-template-rows: 40% 60%;
+    padding: 1.5rem 2rem;
+  }
+}
+
+.topright-container {
+  opacity: 0;
+  width: 60%;
+  position: absolute;
+  right: -5%;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  width: 50%;
+}
+
+@media screen and (max-width: 600px) {
+  .topright-container {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    right: 25%;
+    top: 7rem;
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+}
+
+@-webkit-keyframes flip {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes flip {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.background-image {
+  width: 130%;
+  position: absolute;
+  top: 0;
+  margin-top: -10%;
+  z-index: -1;
+}
+
+@media screen and (max-width: 600px) {
+  .background-image {
+    width: 100%;
+    top: 0;
+    margin: 90px;
+    -webkit-transform: scale(1.7) !important;
+            transform: scale(1.7) !important;
+  }
+}
+
+.base {
+  overflow-x: hidden;
+}
+
+.animate-sub {
+  opacity: 0;
+  -webkit-transform: translateX(-110%);
+          transform: translateX(-110%);
+}
+/*# sourceMappingURL=mid.css.map */

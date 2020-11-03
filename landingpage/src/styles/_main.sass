@@ -1,0 +1,55 @@
+/*primary*/
+$dark-blue: hsl(233, 26%, 24%)
+$lime-green: hsl(136, 65%, 51%)
+$bright-cyan: hsl(192, 70%, 51%)
+
+/*neutral*/
+$grey-blue: hsl(233, 8%, 62%)
+$light-blue: hsl(233, 8%, 62%)
+$very-light-blue: hsl(0, 0%, 98%)
+$white: hsl(0, 0%, 100%)
+$green-gradient: linear-gradient(300deg, rgba(43,183,208,1) 0%, rgba(49,211,92,1) 75%)
+$hover-gradient: linear-gradient(300deg, #5fc4d6 0%, #73d18c 75%)
+html *
+   font-family: 'Public Sans', sans-serif !important
+   
+
+body
+    background-color: $dark-blue
+    padding: 0
+    margin: 0
+    min-height: 100vh
+    font-size: 18px
+    overflow-x: hidden
+   
+.base-btn
+    background: $green-gradient
+    border-radius: 1.3rem
+    padding: 0.7rem
+    width: 8rem
+
+button
+        &:focus
+            outline: none
+        &:active
+            outline: none
+            transform: scale(0.98)
+        &:hover
+            background: $hover-gradient
+        border: none
+        cursor: pointer
+        color: $white
+
+
+// .overlay
+//     width: 100vw
+//     height: 100vh
+//     background: $dark-blue
+    
+//     position: absolute
+//     top: 0
+//     left: 0
+
+
+.base
+    // position: relative
