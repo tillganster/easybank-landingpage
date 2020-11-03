@@ -9,7 +9,14 @@ jobs:
         with:
           persist-credentials: false
           GITHUB_TOKEN: ${{ secrets.GITHUBTOKEN }}
-
+          
+     
+         
+      - name: Build 🛎️
+      - run: npm install
+      - run: npm build
+          
+          
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.6.2
         with:
