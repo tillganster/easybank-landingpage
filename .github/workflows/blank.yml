@@ -16,7 +16,7 @@ jobs:
         run: |
           cd landingpage
           npm install 
-          npm build
+          npm run build
           
           
       - name: Deploy 🚀
