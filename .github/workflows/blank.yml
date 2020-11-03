@@ -12,9 +12,11 @@ jobs:
           
      
          
-      - name: Build 🛎️
-      - run: npm install
-      - run: npm build
+      - name: Build
+        run: |
+          cd landingpage
+          npm install 
+          npm build
           
           
       - name: Deploy 🚀
