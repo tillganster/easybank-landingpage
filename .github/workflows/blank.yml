@@ -15,6 +15,7 @@ jobs:
       - name: Build
         run: |
           cd landingpage
+          rm src/dist
           npm install 
           npm run build
           
