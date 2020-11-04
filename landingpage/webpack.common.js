@@ -39,26 +39,7 @@ module.exports = {
         },
      
       // {,{}
-      {
-        test: /\.(html)$/,
-        loader: 'html-loader',
-        options: {
-          attributes: {
-            list: [
-              // All default supported tags and attributes
-              '...',
-              {
-                tag: 'img',
-                attribute: 'src',
-                type: 'src',
-              },
-              {
-                tag: 'img',
-                attribute: 'data-srcset',
-                type: 'srcset',
-              }]}
-     },
-    },
+     
       {
         
         // Setting up compiling our Sass
